@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settings" android:title="@string/settings"/>
+    <item android:id="@+id/statistics" android:title="@string/statistics"/>
+    <item android:id="@+id/supl_config" android:title="@string/supl_config"/>
+</menu>

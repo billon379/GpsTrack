@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TableRow >
+            <!-- ttff-68% -->
+            <TextView
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="@string/ttff_68" />
+            <TextView
+                android:id="@+id/ttff_68"
+                android:layout_weight="1"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp"/>
+
+            <!-- accu-68% -->
+            <TextView
+               android:layout_weight="1"
+               android:textSize="15sp"
+               android:text="@string/accu_68" />
+            <TextView
+               android:id="@+id/accu_68"
+               android:layout_weight="1"
+               android:textColor="#ff00ff00"
+               android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow >
+            <!-- ttff-95% -->
+            <TextView
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="@string/ttff_95" />
+            <TextView
+                android:id="@+id/ttff_95"
+                android:layout_weight="1"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp" />
+
+            <!-- accu-95% -->
+            <TextView
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="@string/accu_95" />
+            <TextView
+                android:id="@+id/accu_95"
+                android:layout_weight="1"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="@string/no_of_sessions"/>
+        <TextView
+            android:id="@+id/ttff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="@string/statistics_ttff"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

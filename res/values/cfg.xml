@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cfg_internal_path">"/storage/sdcard0/GpsTrackLog/"</string>
+    <string name="cfg_external_path">"/mnt/sdcard/GpsTrackLog/"</string>
+    <string name="colume_of_statistics_1">\"Start Time\",\"End Time\",\"Session NO\",Latitude,Longitude,Altitude,TTFF,Speed,Time,\"Sv used\",\"Ref Long\",\"Ref Lat\",Accuracy,PRN,SNR,Elev,Azim,\"Status\"\n</string>
+    <string name="colume_of_statistics_2">Accu-50%%,Accu-68%%,Accu-95%%,TTFF-50%%,TTFF-68%%,TTFF-95%%,fixed,\"failed\"\n</string>
+    <string name="file_nmea_format">NMEA_%s.txt</string>
+    <string name="file_result_format">results_%s.csv</string>
+    <string name="file_report_format">reports_%s.csv</string>
+    <string name="cfg_session_no_default">100</string>
+    <string name="cfg_session_between_default">20</string>
+    <string name="cfg_time_out_default">200</string>
+    <string name="cfg_ref_long_default">0</string>
+    <string name="cfg_ref_lat_default">0</string>
+</resources>

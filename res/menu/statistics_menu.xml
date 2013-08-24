@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/internal" android:title="@string/menu_internal"/>
+    <item android:id="@+id/external" android:title="@string/menu_external"/>
+</menu>

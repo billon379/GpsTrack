@@ -1,0 +1,246 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:paddingRight="5dip" >
+            <!-- session no -->
+            <TableRow>
+                <TextView
+                    android:textSize="15sp"
+                    android:text="@string/sessions" />
+                <EditText
+                    android:id="@+id/sessions"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:hint="@string/cfg_session_no_default" />
+            </TableRow>
+
+            <!-- time between sessions -->
+            <TableRow>
+                <TextView
+                    android:textSize="15sp"
+                    android:text="@string/time_between_sessions" />
+                <EditText
+                    android:id="@+id/time_between_sessions"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:hint="@string/cfg_session_between_default" />
+            </TableRow>
+
+            <!-- time out -->
+            <TableRow>
+                <TextView
+                    android:textSize="15sp"
+                    android:text="@string/time_out" />
+                <EditText
+                    android:id="@+id/time_out"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:hint="@string/cfg_time_out_default" />
+            </TableRow>
+
+            <!-- ref long -->
+            <TableRow>
+                <TextView
+                    android:textSize="15sp"
+                    android:text="@string/ref_long" />
+                <EditText
+                    android:id="@+id/ref_long"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"
+                    android:hint="@string/cfg_ref_long_default" />
+            </TableRow>
+
+            <!-- ref lat -->
+            <TableRow>
+                <TextView
+                    android:textSize="15sp"
+                    android:text="@string/ref_lat" />
+                <EditText
+                    android:id="@+id/ref_lat"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"
+                    android:hint="@string/cfg_ref_lat_default" />
+            </TableRow>
+
+            <!-- mode -->
+            <TableRow >
+                <TextView
+                    android:textSize="15sp"
+                    android:text="@string/mode"/>
+                <Spinner
+                    android:id="@+id/mode"
+                    android:entries="@array/mode_entry" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/start_mode"/>
+
+        <!-- start mode -->
+        <RadioGroup
+            android:id="@+id/start_mode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/cold"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/warm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/warm"/>
+            <RadioButton
+                android:id="@+id/hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/hot"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/others"/>
+
+        <!-- time,position -->
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip" >
+            <TableRow >
+                <CheckBox
+                    android:id="@+id/cfg_time"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/cfg_time" />
+                <CheckBox
+                    android:id="@+id/cfg_position"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/cfg_position" />
+            </TableRow>
+
+            <!-- eph,alm -->
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cfg_eph"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/cfg_eph" />
+                <CheckBox
+                    android:id="@+id/cfg_alm"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/cfg_alm" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/storage_path"/>
+
+        <!-- storage path -->
+        <RadioGroup
+            android:id="@+id/storage_path"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/internal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="15sp"
+                android:text="@string/internal"/>
+            <RadioButton
+                android:id="@+id/external"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="@string/external"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/nmea"/>
+
+        <!-- NMEA -->
+        <RadioGroup
+            android:id="@+id/nmea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/nmea_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="15sp"
+                android:text="@string/nmea_on"/>
+            <RadioButton
+                android:id="@+id/nmea_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="@string/nmea_off"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/confirm" />
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dip"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TableRow >
+                <!-- latitude -->
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/latitude" />
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_weight="1"
+                    android:textColor="#ff00ff00"
+                    android:textSize="15sp"/>
+
+                <!-- session no -->
+                <TextView
+                   android:layout_weight="1"
+                   android:textSize="15sp"
+                   android:text="@string/session_no" />
+                <TextView
+                   android:id="@+id/session_no"
+                   android:layout_weight="1"
+                   android:textColor="#ff00ff00"
+                   android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow >
+                <!-- longitude -->
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/longitude" />
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_weight="1"
+                    android:textColor="#ff00ff00"
+                    android:textSize="15sp" />
+
+                <!-- fix no -->
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="@string/fix_no" />
+                <TextView
+                    android:id="@+id/fix_no"
+                    android:layout_weight="1"
+                    android:textColor="#ff00ff00"
+                    android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- TTFF -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/ttff" />
+            <TextView
+                android:id="@+id/ttff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Altitude -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/altitude" />
+            <TextView
+                android:id="@+id/altitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- speed -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/speed" />
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- time -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/time" />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- sv used -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/sv_used" />
+            <TextView
+                android:id="@+id/sv_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textSize="15sp"
+                android:text="@string/status" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff00ff00"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- PRN,SNR,Elev,Azim -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/prn" />
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/snr"/>
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/elev" />
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/azim"/>
+        </LinearLayout>
+
+        <!-- list -->
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- start/stop,clear aiding data -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/start_stop"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:text="@string/start" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_data"/>
+    </LinearLayout>
+
+</RelativeLayout>
